@@ -196,8 +196,8 @@ class Zend_Currency
         if ($options['position'] !== self::STANDARD) {
             $value = str_replace('¤', '', $value);
             $space = '';
-            if (iconv_strpos($value, ' ') !== false) {
-                $value = str_replace(' ', '', $value);
+            if (iconv_strpos($value, ' ') !== false) {
+                $value = str_replace(' ', '', $value);
                 $space = ' ';
             }
 
@@ -232,7 +232,7 @@ class Zend_Currency
 
                 default:
                     $sign = '';
-                    $value = str_replace(' ', '', $value);
+                    $value = str_replace(' ', '', $value);
                     break;
             }
         }
