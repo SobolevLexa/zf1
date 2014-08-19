@@ -196,7 +196,7 @@ class Zend_Currency
         if ($options['position'] !== self::STANDARD) {
             $value = str_replace('¤', '', $value);
             $space = '';
-            if (iconv_strpos($value, ' ') !== false) {
+            if (iconv_strpos($value, ' ', 0, 'UTF-8') !== false) {
                 $value = str_replace(' ', '', $value);
                 $space = ' ';
             }
