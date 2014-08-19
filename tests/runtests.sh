@@ -29,7 +29,7 @@
 # @license    http://framework.zend.com/license/new-bsd     New BSD License
 # @version    $Id: AllTests.php 16225 2009-06-21 20:34:55Z thomas $
 
-: ${PHPUNIT:="phpunit"}
+: ${PHPUNIT:="../bin/phpunit"}
 : ${PHPUNIT_OPTS:="--verbose"}
 : ${PHPUNIT_GROUPS:=}
 
